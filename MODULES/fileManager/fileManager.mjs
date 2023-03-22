@@ -1,5 +1,4 @@
 import * as create from "./create.mjs";
-import * as readline from "readline";
 export let userinput;
 export let user_data;
 let input = process.argv;
