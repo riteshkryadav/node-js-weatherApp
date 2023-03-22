@@ -21,7 +21,7 @@ export function fileAppend() {
   console.log("here we go");
   fs.appendFile(
     mainFile.userinput,
-    mainFile.userdata,
+    mainFile.user_data,
     "utf8",
     // callback function
     function (err) {
