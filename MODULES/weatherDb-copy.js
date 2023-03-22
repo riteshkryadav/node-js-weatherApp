@@ -1,0 +1,107 @@
+const weatherData = [{
+    location: 'Kolkata',
+    lat: '22',
+    lag: '12',
+    temp_c:'32',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "29.8",
+    gustKph: "16.2",
+    gustKph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+},
+{
+    location: 'Mumbai',
+    lat: '21',
+    lag: '13',
+    temp_c:'31',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "28.8",
+    gustKph: "7.2",
+    gustMph: "8.1",
+    humidity: "32",
+    isDay: "0",
+
+},
+{
+    location: 'Banglore',
+    lat: '0',
+    lag: '12',
+    temp_c:'33',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "29.8",
+    gustKph: "16.2",
+    gustMph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+},
+{
+    location: 'Delhi',
+    lat: '22',
+    lag: '12',
+    temp_c:'32.6',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "29.8",
+    gustKph: "16.2",
+    gustKph: "10.1",
+    humidity: "41",
+    isKay: "0",
+
+},
+{
+    location: 'Noida',
+    lat: '2',
+    lag: '11',
+    temp_c:'37',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "23.8",
+    gustKph: "16.2",
+    gustMph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+},
+{
+    location: 'Patna',
+    lat: '1',
+    lag: '15',
+    temp_c:'30.01',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "38",
+    gustKph: "16.2",
+    gustMph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+},
+{
+    location: 'Jaipur',
+    lat: '0',
+    lag: '12',
+    temp_c:'36.1',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "39.3",
+    gustKph: "16.2",
+    gustMph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+},
+{
+    location: 'Hyderabad',
+    lat: '0',
+    lag: '12',
+    temp_c:'32.22',
+    condition: { text: 'Overcast', icon: '//cdn.weatherapi.com/weather/64x64/day/122.png', code: 1009 },
+    feelsLikeC: "39.3",
+    gustKph: "16.2",
+    gustMph: "10.1",
+    humidity: "41",
+    isDay: "0",
+
+}
+]
+
+module.exports=weatherData;
