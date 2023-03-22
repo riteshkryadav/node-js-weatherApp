@@ -1,15 +1,5 @@
 import * as http  from "http";
 import * as data from "./weatherDb.mjs"
-// const port = 8000;
-
-// http.createServer((req,res)=>
-// {
-//     res.write("hello");
-// }).listen(port,()=>
-// console.log("server running")
-// )
-
-// const http=require('http');
 
 const port=8000;
 http.createServer((req,res)=>{

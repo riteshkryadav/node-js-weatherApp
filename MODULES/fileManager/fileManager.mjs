@@ -1,12 +1,5 @@
 import * as create from "./create.mjs";
 import * as readline from "readline";
-
-
-// var rl = readline.createInterface(process.stdin, process.stdout);
-
-// rl.question(`Enter 1  for  create file \n Enter 2  for  delete file \n Enter 3  for  add data in the file \n Enter 4  for  delete data from the file`, function(answer) {
-//     // ask a question to interact with user.
-
 export let userinput;
 export let user_data;
 let input = process.argv;
@@ -28,10 +21,9 @@ if (task_number === undefined) {
   console.log("file deleted");
 } else if (file_name !== undefined && user_data !== null && task_number === "3") {
   userinput = file_name;
-//   userdata = input[4];
   create.fileAppend();
 } else if (file_name !== undefined && task_number === "4") {
   userinput = file_name;
   create.deletedata();
 }
-// console.log("Have a great day!");
+

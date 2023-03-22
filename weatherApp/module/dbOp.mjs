@@ -1,10 +1,7 @@
 import * as city from "./weatherDb.mjs";
 import * as file from "./fileOps.mjs";
-// let location,lat,lag,condition,feelsLikeC,icon,code, gustKph, gustMph,humidity,  isDay; // user input future work
-
 
 export  function addData () {
-    // file.fileRead();
     let dict = {
         location: 'Bongoan',
         lat: '21',
@@ -20,7 +17,7 @@ export  function addData () {
     
 }
 file.content.push(dict);
-file.fileCreate();//add to file after operation
+file.fileCreate();
 };
 
 
@@ -31,11 +28,9 @@ export function del() {
     file.fileWrite();
   }
 
-
 export function update() {
-    // file.fileRead();
     file.content.find(function (e) {
-      if (e.location == "kolkata") {
+      if (e.location === "kolkata") {
         e.feelsLikeC = "35.5";
       }
     });

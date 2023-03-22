@@ -51,17 +51,7 @@ function getWeatherData( a ) {
     }
 ]
     return weatherData.filter((item) => item.location==a);
-    // if (weatherData.location === a) {
-    //     return weatherData.condition;
-    // }
-
-
 }
-
-
-// let a=prompt("Enter your location")
-// const response = getWeatherData(a);
-// console.log(response)
 
 const res = process.argv[2]
 console.log(getWeatherData(res));

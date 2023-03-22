@@ -20,17 +20,8 @@ function cityData(){
 }
 cityData();
 
-// console.log("Adddding");
-// functions.addData();
-// console.log(city.weatherData);
-
-// console.log("Deleting");
-// functions.del();
-// console.log(city.weatherData);
-
 console.log("Update");
 functions.update();
 console.log(city.weatherData);
-
 
 file.fileWrite();
