@@ -104,4 +104,4 @@ const weatherData = [{
 }
 ]
 
-module.exports=weatherData;
+module.exports = weatherData;

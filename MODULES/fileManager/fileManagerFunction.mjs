@@ -1,16 +1,15 @@
 import * as fs from "fs";
 import * as mainFile from "./fileManager.mjs";
 
-export function filecreate() {
-  console.log("here we go");
-  fs.open(mainFile.userinput, "w", function (err, f) {
-    console.log("saved!");
+export function fileCreate() {
+  fs.open(mainFile.userInput, "w", function (err, f) {
+    console.log("Saved!");
   });
 }
 
-export function filedelete() {
+export function fileDelete() {
   console.log("here we go");
-  fs.unlink(mainFile.userinput, function (err) {
+  fs.unlink(mainFile.userInput, function (err) {
     if (err) throw err;
     // if no error, file has been deleted successfully
     console.log("File deleted!");
@@ -20,8 +19,8 @@ export function filedelete() {
 export function fileAppend() {
   console.log("here we go");
   fs.appendFile(
-    mainFile.userinput,
-    mainFile.user_data,
+    mainFile.userInput,
+    mainFile.userData,
     "utf8",
     // callback function
     function (err) {
@@ -32,10 +31,10 @@ export function fileAppend() {
   );
 }
 
-export function deletedata() {
+export function deleteData() {
   console.log("here we go");
   fs.truncate(
-    mainFile.userinput,
+    mainFile.userInput,
     // callback function
     function (err) {
       if (err) throw err;

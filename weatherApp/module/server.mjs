@@ -1,11 +1,11 @@
 import * as http  from "http";
 import * as data from "./weatherDb.mjs"
 
-const port=8000;
+const port = 8000;
 http.createServer((req,res)=>{
-res.setHeader("Access-Control-Allow-Origin","*");
+res.setHeader("Access-Control-Allow-Origin", "*");
    
-if(req.url ==='/about') {
+if(req.url === '/about') {
     res.write(JSON.stringify(data.weatherData));  
     res.end(); 
  } else {
@@ -13,6 +13,6 @@ if(req.url ==='/about') {
     res.end(); 
  }
 
-}).listen(port,()=>{
+}).listen(port, ()=>{
     console.log(`Server created at ${port}`)
 })
