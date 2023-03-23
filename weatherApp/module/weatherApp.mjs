@@ -13,7 +13,7 @@ getWeatherData(res);
 
 function cityData(){
     let cityList = city.weatherData;
-    console.log('list of cities')
+    console.log('List of cities')
     for (let i = 0; i<cityList.length;i++){
         console.log(cityList[i].location);
     }

@@ -1,10 +1,13 @@
 import * as fileManagerFunction from "./fileManagerFunction.mjs";
 export let userInput;
 export let userData;
+
 let input = process.argv;
-var taskNumber = input[2];
-var fileName = input[3];
+let taskNumber = input[2];
+let fileName = input[3];
+
 userData = input[4];
+
 if (taskNumber === undefined) {
   console.log("Enter 1  for  create file");
   console.log("Enter 2  for  delete file");

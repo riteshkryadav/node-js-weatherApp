@@ -37,11 +37,8 @@ export function fileAppend() {
     filePath,
     JSON.stringify(content),
     "utf8",
-    // Callback function
     function (err) {
       if (err) throw err;
-
-      //  If no error
       console.log("Data is appended to file successfully!!");
     }
   );
